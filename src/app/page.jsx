@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery Section (Simple) */}
+      {/* Gallery Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">
