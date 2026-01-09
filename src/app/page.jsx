@@ -3,6 +3,14 @@ import React from "react";
 import { Plane, Globe2, Star } from "lucide-react";
 
 export default function Home() {
+  const galleryImages = [
+    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
+    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+    "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+    "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80",
+    "https://images.unsplash.com/photo-1549294413-26f195200c16?w=800&q=80",
+  ];
   return (
     <main>
       <section className="relative w-full h-screen overflow-hidden">
@@ -110,6 +118,33 @@ export default function Home() {
                 journey
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section (Simple) */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">
+            Travel Gallery
+          </h2>
+          <p className="text-center text-gray-600 mb-12">
+            Explore some of our luxury destinations
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {galleryImages.map((img, index) => (
+              <div
+                key={index}
+                className="overflow-hidden rounded-xl shadow-lg group"
+              >
+                <img
+                  src={img}
+                  alt="Luxury travel"
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
