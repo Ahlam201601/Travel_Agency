@@ -49,10 +49,10 @@ export default function Home() {
               Discover Services
             </a>
             <a
-              href="/about"
+              href="/contact"
               className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105"
             >
-              Learn More
+              Contact Us
             </a>
           </div>
         </div>

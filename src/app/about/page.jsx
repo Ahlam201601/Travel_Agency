@@ -1,21 +1,33 @@
+"use client";
+import React, { useState } from "react";
+
 export default function About() {
+  const [activeImage, setActiveImage] = useState(0);
+
+  const galleryImages = [
+    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
+    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+    "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+    "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80",
+    "https://images.unsplash.com/photo-1549294413-26f195200c16?w=800&q=80"
+  ];
+
   return (
-    <section className="relative bg-linear-to-r from-cyan-600 to-blue-600 text-white py-20 px-4 overflow-hidden mt-18">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              About <span className="text-cyan-300">LuxTrip</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-cyan-100 max-w-3xl mx-auto leading-relaxed">
-              Crafting extraordinary travel experiences since 2010. Your journey to luxury starts here.
-            </p>
-          </div>
+    <main className="min-h-screen bg-linear-to-b from-gray-50 to-white mt-20">
+      {/* Header Section */}
+      <section className="relative py-20 px-4 bg-linear-to-b from-cyan-600 to-blue-600 text-white">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+            About <span className="text-cyan-200">LuxTrip</span>
+          </h1>
+          <div className="h-1 w-32 bg-cyan-300 mx-auto mt-6"></div>
         </div>
       </section>
+
+      
+
+      
+    </main>
   );
 }
